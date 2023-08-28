@@ -1,6 +1,9 @@
-import '../../styles/home.css'
+import Cards from "../../components/Cards"
+
+
 function Home(){
-    return <div></div>
+    
+    return <Cards/>
 }
 
 export default Home
