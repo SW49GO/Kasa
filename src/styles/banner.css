@@ -1,0 +1,42 @@
+.header{
+    height: 2.9375rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo{
+    width: 30%;
+}
+.header_logo img{
+    width: 70%;
+}
+.header_nav{
+    width: 70%;
+    text-align: right;
+    font-size: .75rem;
+}
+.header_link{
+    text-transform: capitalize;
+    text-decoration: none;
+    color:#ff6060;
+    margin-left: 10%;
+}
+.active {
+    text-decoration: underline;
+    text-underline-offset: .1rem;
+}
+
+@media screen and (min-width: 376px){
+    .header{
+        height: 4.25rem;
+    }
+    .header_nav{
+        font-size: 1.5rem;
+    }
+    .header_link{
+        margin-left: 5%;
+    }
+    .active {
+        text-underline-offset: .2rem;
+    }
+}
