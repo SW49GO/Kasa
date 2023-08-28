@@ -1,6 +1,7 @@
-import '../../styles/appartment.css'
-function Appartment(){
-    return <div></div>
+import Appartment from '../../components/Appartment'
+
+function CardAppartment(){
+    return <Appartment/>
 }
 
-export default Appartment
+export default CardAppartment

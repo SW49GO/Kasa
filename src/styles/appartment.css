@@ -1,0 +1,112 @@
+.logement_caroussel{
+    position: relative;
+    width: 1240px;
+    height: 415px;
+    margin-bottom: 32px;
+}
+.position{
+    position:absolute;
+   
+}
+.show{
+    display:block;
+}
+.hidden{
+    display: none;
+}
+.noActiveTags{
+    color:#E3E3E3;
+
+}
+.activeTags{
+    color:#FF6060;
+}
+.logement_title_name{
+    color:#FF6060;
+    font-size: 36px;
+    line-height: 51.3408px;
+}
+.logement_title_city, .logement_avis_name{
+    color:#FF6060;
+    font-size: 18px;
+}
+.logement_avis_picture{
+    width:64px;
+    height: 64px;
+}
+.logement_avis_picture img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+}
+.logement_title_tags{
+    display: flex;
+}
+.Logement_tags{
+    text-align: center;
+    padding: 5px;
+    margin-right:15px;
+    background-color:#FF6060;
+    border-radius: 10px;
+    color:#FFF;
+    font-size: 14px;
+}
+.logement_detail{
+    display: flex;
+    justify-content: space-between;
+}
+.logement_avis_name{
+    text-align: right;
+    margin-right: 16px;
+}
+.logement_avis_detail{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.logement_avis_stars{
+    font-size: 1.7rem;
+}
+.fa-star{
+    margin-left: 0.5rem;
+}
+.logement_collapse{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.logement_collapse .dropdown{
+    width: 47%;
+}
+.logement_caroussel_nav{
+    display:flex;
+    justify-content: space-between;
+    width: 97%;
+    margin: 0 auto;
+}
+.logement_caroussel_nav i{
+    position:relative;
+    top:160px;
+    font-size: 80px;
+    z-index: 5;
+    color:#FFF;
+}
+.logement_caroussel_index{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    bottom: -288px;
+    font-size:18px;
+    font-weight: 500;
+    color:#FFF;
+}
+.left, .right{
+    position: relative;
+    top:160px;
+    width: 48px;
+    z-index: 3;
+}
+.right{
+    transform: rotate(180deg);
+}
