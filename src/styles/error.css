@@ -1,0 +1,30 @@
+.error{
+    text-align: center;
+    color:#FF6060;
+    margin-top: 8rem;
+}
+.error_404{
+    font-size: 6rem;
+    font-weight: 700;
+}
+.error_Txt{
+    font-size: 1.125rem;
+    margin-bottom: 8rem;
+}
+.error_Link{
+    color:#FF6060;
+    font-size: .875rem;
+}
+
+@media screen and (min-width: 376px){
+    .error_404{
+        font-size: 18rem;
+    }
+    .error_Txt{
+        font-size: 2.25rem;
+        margin-bottom: 8rem;
+    }
+    .error_Link{
+        font-size: 1.125rem;
+    }
+}
