@@ -26,17 +26,17 @@ function Appartment(){
                   <div className='logement_title'>
                     <p className='logement_title_name'>{objetTrouve.title}</p>
                     <p className='logement_title_city'>{objetTrouve.location}</p>
-                   <Tags log={objetTrouve}/>
                   </div>
+                  <Tags log={objetTrouve}/>
                   <div className='logement_avis'>
                     <div className='logement_avis_detail'>
                       <div className='logement_avis_name'>{objetTrouve.host.name.split(' ').map((val, index) => (<p key={index}>{val}</p>))}</div>
                       <div className='logement_avis_picture'>
                         <img src={objetTrouve.host.picture} alt="profil" />
-                      </div>
+                      </div>                      
                     </div>
-                    <Stars log={objetTrouve}/>
                   </div>
+                  <Stars log={objetTrouve}/>
                 </article>
                 <article className='logement_dropdown'>
                 {newData.map((item,index)=>( 

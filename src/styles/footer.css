@@ -21,7 +21,7 @@ width: 25%;
     font-size: .75rem;
 }
 
-@media screen and (min-width: 376px){
+@media screen and (min-width: 768px){
     .footer_image{
     margin: 0 auto 2rem;
     width: 8%;

@@ -24,13 +24,13 @@
     width: 20.9375rem;
     background-color: #F6F6F6;
     margin: 0 auto 2rem;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 1.5rem 1rem 2rem 1rem;
     border-radius: 0 0 .625rem .625rem;
     font-size: .75rem;
     font-weight: 400;
     color: #FF6060;
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768px) {
     .dropdown {
         position: relative;
         margin-bottom: 2rem;

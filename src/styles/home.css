@@ -33,7 +33,6 @@
 }
 .homePage_galery_card{
     position:relative;
-    background: linear-gradient(#FF6060 50%, #000);
     border-radius: .625rem;
 }
 .homePage_galery_card div{
@@ -47,7 +46,7 @@
     padding-left: 1rem;
 }
 
-@media screen and (min-width: 376px){
+@media screen and (min-width: 768px){
     .homePage_galery{
         padding: 3rem 0 3rem 0;
     }
@@ -58,6 +57,7 @@
     }
     .homePage_title p{
         display: inline;
+        line-height: 3.5rem;
     }
     .homePage_title{
         text-align: center;
