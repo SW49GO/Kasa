@@ -119,6 +119,7 @@
     transform: rotate(180deg);
 }
 
+
 @media screen and (min-width: 768px){
     .logement_caroussel{
         height: 25.9375rem;
@@ -183,7 +184,7 @@
     }
     .logement_avis_detail{
         display: flex;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
     .logement_avis_stars{
         grid-column: 2/3;
@@ -193,7 +194,7 @@
         font-size: 1.7rem;
     }
     .fa-star{
-        margin-left: 8px;
+        margin-left: .5rem;
     }
     .logement_collapse{
         display: flex;
@@ -233,6 +234,10 @@
     }
     .right{
         transform: rotate(180deg);
+    }
+    .logement_dropdown{
+        display: flex;
+        margin-right: -2%;
     }
 
 }
