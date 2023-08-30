@@ -13,7 +13,7 @@
     height: 1.875rem;
     margin: 0 auto;
     padding: 1.25rem;
-    width: 20.9375rem;
+    width: 90%;
     background-color: #FF6060;
     color:#FFF;
 }
@@ -21,7 +21,7 @@
     position:relative;
     top:-0.5rem;
     text-align: justify;
-    width: 20.9375rem;
+    width: 90%;
     background-color: #F6F6F6;
     margin: 0 auto 2rem;
     padding: 1.5rem 1rem 2rem 1rem;
@@ -30,18 +30,21 @@
     font-weight: 400;
     color: #FF6060;
 }
+.aboutPage_image.image{
+    height: 13.9375rem;
+}
+
 @media screen and (min-width: 768px) {
     .dropdown {
         position: relative;
         margin-bottom: 2rem;
     }
     .dropdown_menu{
-        width: 63.9375rem;
         font-size: 1.5rem;
         height: 2.9375rem;
     }
     .dropdown_detail{
-        width: 63.9375rem;
+        width: 90%;
         font-size: 1.5rem;
         padding: 2rem 1rem 1rem 1rem;
     }

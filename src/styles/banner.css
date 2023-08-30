@@ -16,7 +16,7 @@
     font-size: .75rem;
 }
 .header_link{
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-decoration: none;
     color:#ff6060;
     margin-left: 10%;
@@ -34,6 +34,7 @@
         font-size: 1.5rem;
     }
     .header_link{
+        text-transform: capitalize;
         margin-left: 5%;
     }
     .active {

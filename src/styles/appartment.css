@@ -1,11 +1,10 @@
 .logement_caroussel{
     position: relative;
     height: 15.9375rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 .position{
     position:absolute;
-   
 }
 .show{
     display:block;
@@ -122,9 +121,8 @@
 
 @media screen and (min-width: 768px){
     .logement_caroussel{
-        width: 77.5rem;
         height: 25.9375rem;
-        margin: 2rem 0 2rem 0;
+        margin: 4rem 0 2rem 0;
     }
     .position{
         position:absolute;
