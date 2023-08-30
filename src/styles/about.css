@@ -11,11 +11,17 @@
     border-radius: .625rem;
     font-size: .8125rem;
     height: 1.875rem;
-    margin: 0 auto;
+    margin: 0;
     padding: 1.25rem;
     width: 100%;
     background-color: #FF6060;
     color:#FFF;
+}
+.dropdown_margin{
+    margin: 0 auto; 
+}
+.dropdown_detail.dropdown_margin{
+    margin: 0 auto;
 }
 .dropdown_detail{
     position:relative;
@@ -38,11 +44,10 @@
     .dropdown {
         position: relative;
         margin-bottom: 2rem;
-        width: 50%;
+        min-width: 50%;
     }
     .dropdown_menu{
         width: 95%;
-        margin: 0;
         font-size: 1.5rem;
         height: 2.9375rem;
     }
@@ -52,5 +57,8 @@
         font-size: 1.5rem;
         padding: 2rem 1rem 1rem 1rem;
         margin-right: 5%;
+    }
+    .dropdown_detail.dropdown_margin{
+        min-height: 11.5rem;
     }
 }
