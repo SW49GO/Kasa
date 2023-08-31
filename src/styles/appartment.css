@@ -83,6 +83,7 @@
     font-size: 1.125rem;
 }
 .fa-star{
+    font-size: .8125rem;
     margin-right: 0.5rem;
 }
 .logement_collapse{
@@ -194,7 +195,7 @@
         font-size: 1.7rem;
     }
     .fa-star{
-        margin-left: .5rem;
+        font-size: 2.25rem;
     }
     .logement_collapse{
         display: flex;

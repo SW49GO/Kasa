@@ -15,7 +15,7 @@ function Cards(){
 
   if(!isLoading){
     return (<div className="homePage">
-               <HeaderPicture home={true}/>
+               <HeaderPicture/>
                 <div className='homePage_galery'>
                 {datas.map((val) => (
                     <article className='homePage_galery_card' key={val.id} onClick={() => navigate(`/Appartment/${val.id}`)}>

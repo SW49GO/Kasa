@@ -12,7 +12,7 @@ function About(){
       }
     if(!isLoading){
     return <div>
-        <HeaderPicture home={false}/>
+        <HeaderPicture/>
         {datas.map((item,index)=>( 
         <Collapse key={index} title={item.title} description={item.description}/>
         ))}
