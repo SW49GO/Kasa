@@ -11,8 +11,7 @@ function Routage(){
  return  <Router>
         <Banner/>
             <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route path="/Home" element={<Home />} />
+                <Route path="/" exact element={<Home />} />
                 <Route path="/About" element={<About />} />
                 <Route path="/Appartment/*" element={<Appartment />} />
                 <Route path="*" element={<Error />} />

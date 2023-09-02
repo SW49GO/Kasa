@@ -1,4 +1,4 @@
-.footer{
+.container{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -8,30 +8,30 @@
     height: 13rem;
     color:#FFF;
 }
-.footer_image{
+.image{
 margin: 0 auto 2rem;
 width: 25%;
 }
-.imageFooter{
+.logo{
     border-radius: 0;
     width: 80%;
     height: 80%;
 }
-.footer p {
+.container p {
     font-size: .75rem;
 }
 
 @media screen and (min-width: 768px){
-    .footer_image{
+    .container p {
+        font-size: 1.5rem;
+    }
+    .image{
     margin: 0 auto 2rem;
     width: 8%;
     }
-    .imageFooter{
+    .logo{
         border-radius: 0;
         width: 80%;
         height: 80%;
-    }
-    .footer p {
-        font-size: 1.5rem;
     }
 }

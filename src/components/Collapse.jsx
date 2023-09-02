@@ -1,4 +1,4 @@
-import '../styles/about.css'
+import Styles from '../styles/Collapse.module.css'
 import useDropdown from '../utils/hooks/useDropdown';
 import { useLocation } from 'react-router-dom';
 
@@ -10,8 +10,8 @@ function Collapse(props) {
   const isAboutPage = location.pathname === '/About';
 
   return (
-    <div className="dropdown">
-      <div className={`dropdown_menu ${isAboutPage ? 'dropdown_margin' : ''}`}>
+    <div className={Styles.container}>
+      <div className={`${Styles.menu} ${isAboutPage ? `${Styles.menu_margin}` : ''}`}>
         <p>{title}</p>
         {isOpen ? (
           <i className="fa-solid fa-chevron-up fa-rotate-180" onClick={toggleDropdown}></i>
@@ -19,7 +19,7 @@ function Collapse(props) {
           <i className="fa-solid fa-chevron-up fa-rotate-360" onClick={toggleDropdown}></i>
         )}
       </div>
-      {isOpen && <div className={`dropdown_detail ${isAboutPage ? 'dropdown_margin' : ''}`}>{description}</div>}
+      {isOpen && <div className={`${Styles.detail} ${isAboutPage ? `${Styles.menu_margin}` : ''}`}>{description}</div>}
     </div>
   );
 }

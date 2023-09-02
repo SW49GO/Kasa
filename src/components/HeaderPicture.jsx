@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 
-import '../styles/home.css'
+import Styles from '../styles/HeaderPicture.module.css'
 import { useLocation } from 'react-router-dom';
 
 function HeaderPicture(){
@@ -8,10 +8,10 @@ function HeaderPicture(){
     const pathSrc= location.pathname==="/"?'./assets/mer.svg':'./assets/montagne.svg';
     const isAboutPage = location.pathname === '/About';
 
-    return <div className={`homePage_image ${isAboutPage ? 'aboutPage_image' : ''}`}>
-    <img className="image" src={pathSrc} alt="Mer ou Montagne" />
+    return <div className={`${Styles.home_image} ${isAboutPage ? `${Styles.about_image}` : ''}`}>
+    <img className={Styles.image} src={pathSrc} alt="Mer ou Montagne" />
     {!isAboutPage && (
-      <div className="homePage_title">
+      <div className={Styles.title}>
         <p>Chez vous,</p>
         <p> partout et ailleurs</p>
       </div>

@@ -1,11 +1,10 @@
-import '../styles/appartment.css'
+import Styles from '../styles/Slideshow.module.css'
 import React, { useState } from 'react';
 
 function Slideshow(props) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const photo = props.tabPictures;
     const lengthPhoto = photo.length;
-    console.log('lengthPhoto:', lengthPhoto)
 
     const handlePrevClick = () => {
         setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : lengthPhoto - 1));
@@ -17,26 +16,26 @@ function Slideshow(props) {
 
     if (lengthPhoto > 1) {
         return (
-            <div className='logement_caroussel'>
+            <div className={Styles.container}>
                 {photo.map((value, index) => {
-                    const setClass = index === currentIndex ? "show" : "hidden";
+                    const setClass = index === currentIndex ? `${Styles.show}` :  `${Styles.hidden}`;
                     return (
-                        <img className={`image position ${setClass}`} src={value} alt="photos logement" key={index} />
+                        <img className={`${Styles.image} ${Styles.position} ${setClass}`} src={value} alt="photos logement" key={index} />
                     );
                 })}
-                <div className='logement_caroussel_nav'>
-                    <div onClick={handlePrevClick}><img className="left" src="../assets/left.svg" alt="fleche_gauche"/></div>
+                <div className={Styles.navigation}>
+                    <div onClick={handlePrevClick}><img className={Styles.left} src="../assets/left.svg" alt="fleche_gauche"/></div>
                    
-                    <div onClick={handleNextClick}><img className="right" src="../assets/left.svg" alt="fleche_droite"/></div>
+                    <div onClick={handleNextClick}><img className={Styles.right} src="../assets/left.svg" alt="fleche_droite"/></div>
                 </div>
-                <div className='logement_caroussel_index'>
+                <div className={Styles.number}>
                 {currentIndex + 1} / {lengthPhoto}
                 </div>
             </div>
         );
     } else {
-        return  <div className='logement_caroussel'>
-            <img className={`image position show`} src={photo} alt="photos logement" key={0} />
+        return  <div className={Styles.container}>
+            <img className={`${Styles.image} ${Styles.position} ${Styles.show}`} src={photo} alt="photos logement" key={0} />
         </div>
     }
 }

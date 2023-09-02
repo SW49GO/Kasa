@@ -3,6 +3,7 @@ import Slideshow from './Slideshow';
 import Stars from './Stars';
 import Tags from './Tags';
 import Collapse from './Collapse';
+import Styles from '../styles/Appartment.module.css'
 
 function Appartment(){
     const url = (window.location.pathname).split('/');
@@ -19,26 +20,26 @@ function Appartment(){
         const pictures = objetTrouve.pictures;
 
         return <section>
-                <article className='logement_caroussel'>
+                <article className={Styles.container_slideshow}>
                   <Slideshow tabPictures={pictures}/>
                 </article>
-                <article className='logement_detail'>
-                  <div className='logement_title'>
-                    <p className='logement_title_name'>{objetTrouve.title}</p>
-                    <p className='logement_title_city'>{objetTrouve.location}</p>
+                <article className={Styles.container_detail}>
+                  <div className={Styles.title}>
+                    <p className={Styles.name}>{objetTrouve.title}</p>
+                    <p className={Styles.city}>{objetTrouve.location}</p>
                   </div>
                   <Tags log={objetTrouve}/>
-                  <div className='logement_avis'>
-                    <div className='logement_avis_detail'>
-                      <div className='logement_avis_name'>{objetTrouve.host.name.split(' ').map((val, index) => (<p key={index}>{val}</p>))}</div>
-                      <div className='logement_avis_picture'>
+                  <div className={Styles.container_avis}>
+                    <div className={Styles.avis_detail}>
+                      <div className={Styles.avis_name}>{objetTrouve.host.name.split(' ').map((val, index) => (<p key={index}>{val}</p>))}</div>
+                      <div className={Styles.avis_picture}>
                         <img src={objetTrouve.host.picture} alt="profil" />
                       </div>                      
                     </div>
                   </div>
                   <Stars log={objetTrouve}/>
                 </article>
-                <article className='logement_dropdown'>
+                <article className={Styles.container_collapse}>
                 {newData.map((item,index)=>( 
                   <Collapse key={index} title={item.title} description={index === 1 ? objetTrouve.equipments.map((val,descIndex)=>(<p key={descIndex}>{val}</p>)) : objetTrouve.description}/>
                 ))}

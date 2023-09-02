@@ -1,4 +1,4 @@
-import '../styles/appartment.css'
+import Styles from '../styles/Stars.module.css'
 
 function Stars(props){
     const objetFind= props.log
@@ -9,13 +9,13 @@ function Stars(props){
     const starIcons=[];
     for(let i=0; i<defaultTags;i++){
         if(numberTags !== 0){
-            starIcons.push( <i key={i} className="fa-solid fa-star activeTags"></i>)
+            starIcons.push( <i key={i} className={`fa-solid fa-star ${Styles.fa} ${Styles.activeTags}`}></i>)
             numberTags--;
         }else{
-            starIcons.push( <i key={i} className="fa-solid fa-star noActiveTags"></i>)
+            starIcons.push( <i key={i} className={`fa-solid fa-star ${Styles.fa} ${Styles.noActiveTags}`}></i>)
         }
     }
-    return <div className='logement_avis_stars'>
+    return <div className={Styles.container}>
             {starIcons}
            </div>
 }

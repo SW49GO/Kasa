@@ -1,15 +1,14 @@
-import { NavLink } from 'react-router-dom'
-import '../styles/banner.css'
-
+import { Link } from 'react-router-dom'
+import Styles from '../styles/Banner.module.css'
 
 function Banner(){
-    return (<nav className='header'>
-                <div className="header_logo">
+    return (<nav className={Styles.container}>
+                <div className={Styles.picture}>
                     <img src="../assets/logo.svg" alt="Logo Kasa"/>
                 </div>
-                <div className="header_nav">
-                    <NavLink className="header_link" to="/">Accueil</NavLink>
-                    <NavLink className="header_link" to="/About">A propos</NavLink>
+                <div className={Styles.navigation}>
+                    <Link className={Styles.links} to="/">Accueil</Link>
+                    <Link className={Styles.links} to="/About" >A propos</Link>
                 </div>
            </nav>)
 }

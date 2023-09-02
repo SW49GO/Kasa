@@ -1,8 +1,8 @@
-.dropdown {
+.container {
     position: relative;
     margin-bottom: 2rem;
 }
-.dropdown_menu{
+.menu{
     position:relative;
     z-index: 2;
     display:flex;
@@ -17,13 +17,13 @@
     background-color: #FF6060;
     color:#FFF;
 }
-.dropdown_margin{
+.menu_margin{
     margin: 0 auto; 
 }
-.dropdown_detail.dropdown_margin{
+.detail.menu_margin{
     margin: 0 auto;
 }
-.dropdown_detail{
+.detail{
     position:relative;
     top:-0.5rem;
     text-align: justify;
@@ -36,29 +36,26 @@
     font-weight: 400;
     color: #FF6060;
 }
-.aboutPage_image.image{
-    height: 13.9375rem;
-}
 
 @media screen and (min-width: 768px) {
-    .dropdown {
+    .container {
         position: relative;
         margin-bottom: 2rem;
         min-width: 50%;
     }
-    .dropdown_menu{
+    .menu{
         width: 95%;
         font-size: 1.5rem;
         height: 2.9375rem;
     }
-    .dropdown_detail{
+    .detail{
         width: 95%;
         min-height: 15.5625rem;
         font-size: 1.5rem;
         padding: 2rem 1rem 1rem 1rem;
         margin-right: 5%;
     }
-    .dropdown_detail.dropdown_margin{
+    .detail.menu_margin{
         min-height: 11.5rem;
     }
 }

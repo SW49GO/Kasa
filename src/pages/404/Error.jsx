@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
-import '../../styles/error.css'
+import Styles from '../../styles/Error.module.css'
 function Error(){
-    return <div className="error">
-                <p className="error_404">404</p>
-                <p className="error_Txt">oups! La page que vous demandez n'existe pas.</p>
-                <Link className="error_Link" to="/">Retourner sur la page d'accueil</Link>
+    return <div className={Styles.container}>
+                <p className={Styles.logo}>404</p>
+                <p className={Styles.title}>oups! La page que vous demandez n'existe pas.</p>
+                <Link className={Styles.link} to="/">Retourner sur la page d'accueil</Link>
            </div>
 }
 

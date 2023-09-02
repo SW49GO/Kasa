@@ -1,8 +1,7 @@
-// import { useState} from 'react'
-import '../styles/home.css'
 import HeaderPicture from './HeaderPicture';
 import { useNavigate } from 'react-router-dom';
 import { useFetch } from '../utils/hooks/useFetch';
+import Styles from '../styles/Cards.module.css'
 
 function Cards(){
   const navigate = useNavigate();
@@ -14,13 +13,13 @@ function Cards(){
   }
 
   if(!isLoading){
-    return (<div className="homePage">
+    return (<div className={Styles.container}>
                <HeaderPicture/>
-                <div className='homePage_galery'>
+                <div className={Styles.galery}>
                 {datas.map((val) => (
-                    <article className='homePage_galery_card' key={val.id} onClick={() => navigate(`/Appartment/${val.id}`)}>
+                    <article className={Styles.galery_card} key={val.id} onClick={() => navigate(`/Appartment/${val.id}`)}>
                         <div>
-                            <img className="image" src={val.cover}  alt="logement"/>
+                            <img className={Styles.galery_card_image} src={val.cover}  alt="logement"/>
                         </div>
                         <p>{val.title}</p> 
                     </article>
