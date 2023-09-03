@@ -17,7 +17,7 @@ function Cards(){
                <HeaderPicture/>
                 <div className={Styles.galery}>
                 {datas.map((val) => (
-                    <article className={Styles.galery_card} key={val.id} onClick={() => navigate(`/Appartment/${val.id}`)}>
+                    <article className={Styles.galery_card} key={val.id} onClick={() => navigate(`/Apartment/${val.id}`)}>
                         <div>
                             <img className={Styles.galery_card_image} src={val.cover}  alt="logement"/>
                         </div>
