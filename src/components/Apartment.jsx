@@ -8,6 +8,10 @@ import Collapse from './Collapse';
 import Styles from '../styles/Apartment.module.css'
 import isValidApartmentId from '../utils/function/isValidApartmentId';
 
+/**
+ * Function to display all the information of an apartment 
+ * @returns Component function Apartment
+ */
 function Apartment(){
     const navigate=useNavigate()
     const url = (window.location.pathname).split('/');
@@ -15,18 +19,18 @@ function Apartment(){
     const data = useFetch(`http://localhost:3000/data.json`);
 
     useEffect(() => {
-      if (!data.isLoading) {
+      if (!data.isLoading && !data.error) {
         if (!isValidApartmentId(idu, data.data)) {
           navigate('/error');
         }
       }
-    }, [idu, data.isLoading, data.data, navigate]);
+    }, [idu, data.isLoading, data.data, data.error, navigate]);
 
     const collapse = useFetch(`http://localhost:3000/collapse.json`);
     const collData = Object.values(collapse.data);
     const newData =collData.slice(-2);
 
-    if (!data.isLoading || !collapse.isLoading){
+    if (!data.isLoading && (!collapse.isLoading || !collapse.error)){
         const datas = Object.values(data.data);
         const objetTrouve = datas.find(objet => objet.id === idu);
     if (objetTrouve) {
@@ -59,9 +63,9 @@ function Apartment(){
             </article>
           </section>
     }else{
-      return <span></span>;
+      return <span>Il y a eu un problème</span>;
     }
-    }
+  }
 }
 
 export default Apartment

@@ -21,7 +21,7 @@
     color:#ff6060;
     margin-left: 10%;
 }
-.links:focus{
+.links.underline{
     text-decoration: underline;
     text-underline-offset: .1rem;
 }
@@ -37,7 +37,7 @@
         text-transform: capitalize;
         margin-left: 5%;
     }
-    .links:focus{
+    .links.underline{
         text-underline-offset: .2rem;
     }
 }

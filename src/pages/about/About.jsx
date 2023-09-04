@@ -2,7 +2,12 @@ import Collapse from "../../components/Collapse"
 import HeaderPicture from "../../components/HeaderPicture"
 import { useFetch } from "../../utils/hooks/useFetch";
 
+/**
+ * Function to display components HeaderPicture and Collapse, dropdown list in About page
+ * @returns Component function About
+ */
 function About(){
+
     const { data, isLoading, error } = useFetch("http://localhost:3000/collapse.json");
     const datas = Object.values(data);
     // Enleve les 2 derniers
